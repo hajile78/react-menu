@@ -19,7 +19,7 @@ export class HeaderMenu extends React.Component {
     render() {
       return (
         <div className="App">
-          <div {... this.stringifyObj(this.state.navHeadAttributes) }>
+          <div {... this.state.navHeadAttributes }>
             <NavLink attrib={this.state.buttonAttributes} >Home</NavLink>
             <NavLink attrib={this.state.buttonAttributes} >About</NavLink>
             <NavLink attrib={this.state.buttonAttributes} >Contact</NavLink>
