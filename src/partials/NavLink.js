@@ -16,7 +16,7 @@ export class NavLink extends React.Component {
     }
     render() {
         return(
-            <button {... this.state.attrib} >{this.props.children}</button>
+            <button id={'btn'+this.props.children} {... this.state.attrib} >{this.props.children}</button>
         )
     }
 }
