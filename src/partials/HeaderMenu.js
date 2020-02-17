@@ -23,7 +23,7 @@ export class HeaderMenu extends React.Component {
         <div className="App">
           <div {... this.state.navHeadAttributes }>
             
-            <YourSvg style={{height: '100px', width: '100px', fill: 'green', stroke: 'green'}} />
+            <YourSvg style={{height: '100px', width: '100px', fill: '#ffffff', stroke: '#ffffff'}} />
             <nav style={{gridColumn: '3/4', alignItems: 'flex-start', display: 'flex', justifySelf: 'flex-end'}}>
                 <NavLink attrib={this.state.buttonAttributes} ><span>Home</span></NavLink>
                 <NavLink attrib={this.state.buttonAttributes} >About</NavLink>
