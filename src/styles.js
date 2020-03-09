@@ -2,7 +2,7 @@ const styles = {
     navHeadAttributes: {
         className:"nav",
         style: {
-        padding: 15, 
+        paddingTop: 15, 
         minWidth: 960, 
         width: '100%', 
         display: 'grid', 
@@ -20,11 +20,12 @@ const styles = {
         style: {
         padding: 10, 
         marginTop: 5, 
-        marginBottom: 5, 
-        marginLeft: 15, 
-        marginRight: 15, 
+        marginBottom: 0, 
+        marginLeft: 0, 
+        marginRight: 0, 
         color: '#fff', 
-        backgroundColor: '#008183'
+        background: 'transparent',
+        border: 'none'
         }
     }
 }

@@ -3,3 +3,58 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.navBtn::after {
+    content: '|';
+    padding-left: 15px;
+}
+
+.navBtn:last-child::after {
+    content: '';
+    padding-left: 15px;
+}
+
+#main-content {
+   display: flex;
+   justify-content: center; 
+   width: 100%;
+   height: 100vh;
+}
+
+#main-content div {
+    width: 100%;
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: .5fr 11.5fr;
+    grid-template-columns: .5fr 2.5fr 8fr 1fr;
+    grid-gap: 5px;
+}
+
+#content {
+    max-width: 600px;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#aside {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#aside ul {
+    list-style: none;
+}
+
+#aside ul > li::before {
+    content: '';
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-size: 15px;
+    background-image: url('./images/arrow.png');
+    background-repeat: no-repeat;
+    background-color: aquamarine;
+    margin-right: 10px;
+    background-position: center center;
+    vertical-align: middle;
+}
